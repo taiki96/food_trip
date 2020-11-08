@@ -1,0 +1,141 @@
+/*#post_body {*/
+/*    background-image: url("images2/pexels-aleksandar-pasaric-1415734.jpg");*/
+/*    background-color: rgba(255, 255, 255, 0.5);*/
+/*    background-size: cover;*/
+/*    background-attachment: fixed;*/
+/*}*/
+
+#post_header { /*ヘッダー部分*/
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#post_index { /*メイン画面部分*/
+    margin: 20px auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 80%;
+    background-color: #CCCCCC;
+    border-radius: 20px;
+    box-shadow: 0 0 10px gray;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+#koumoku {
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+#map_post {
+    width: 700px;
+    height: 400px;
+    margin-top: 30px;
+}
+
+#latlng_now { /*現在地ボタン*/
+    text-align: center;
+    margin-top: 20px;
+}
+
+#post_t { /*都道府県*/
+    padding-left: 200px;
+    margin: 30px auto;
+}
+
+#post_a { /*住所入力*/
+    padding-left: 200px;
+    margin: 30px auto;
+}
+
+#post_s { /*店名入力*/
+    padding-left: 200px;
+    margin: 30px auto;
+}
+
+#post_c { /*カテゴリ選択*/
+    padding-left: 200px;
+    margin: 30px auto;
+}
+
+#post_p { /*写真選択*/
+    padding-left: 200px;
+    margin: 30px auto;
+}
+
+#actions { /*確認画面ボタン*/
+    padding-left: 200px;
+    margin: 100px auto 30px auto;
+}
+
+#to_index { /*トップ画面へ変遷ボタン*/
+    padding-left: 200px;
+    margin: 30px auto;
+}
+
+#keyword {
+    width: 50%;
+}
+
+#store {
+    width: 40%;
+}
+
+@media screen and (max-width:480px){
+    #map_post {
+        width: 75%;
+        height: 200px;
+        margin-top: 10px;
+    }
+    
+    #title_photo img{
+        width: 300px;
+        height: 70px;
+    }
+   
+    #post_t { /*都道府県*/
+        padding-left: 20px;
+        margin: 30px auto;
+    }
+    
+    #post_a { /*住所入力*/
+        padding-left: 20px;
+        margin: 30px auto;
+    }
+    
+    #post_s { /*店名入力*/
+        padding-left: 20px;
+        margin: 30px auto;
+    }
+    
+    #post_c { /*カテゴリ選択*/
+        padding-left: 20px;
+        margin: 30px auto;
+    }
+    
+    #post_p { /*写真選択*/
+        padding-left: 20px;
+        margin: 30px auto;
+    }
+    
+    #actions { /*確認画面ボタン*/
+        padding-left: 20px;
+        margin: 100px auto 30px auto;
+    }
+    
+    #to_index { /*トップ画面へ変遷ボタン*/
+        padding-left: 20px;
+        margin: 30px auto;
+    }
+    
+    p {
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    }
+    
+}

@@ -1,0 +1,219 @@
+/*photosページへ遷移ボタン 100~151*/
+#shasin { 
+    color: #454545;
+    background: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #454545;
+    position :relative;
+    margin: 1em;
+    display: inline-block;
+    padding: 0.5em 1em;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-family: comfortaa;
+    font-weight: bold
+}
+
+#shasin:before, #shasin:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-color: #454545;
+    box-sizing: border-box;
+    border-style: solid;
+    width: 1em;
+    height: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+#shasin:before {
+    top: -6px;
+    left: -6px;
+    border-width: 2px 0 0 2px;
+    z-index: 5;
+}
+
+#shasin:after {
+    bottom: -6px;
+    right: -6px;
+    border-width: 0 2px 2px 0;
+}
+
+#shasin:hover:before, #shasin:hover:after {
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    border-color: #fff;
+}
+
+#shasin:hover {
+    color: #353535;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+/*検索ボタンの装飾 214~265*/
+#search_button {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#kennsaku { 
+    color: #454545;
+    background: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #454545;
+    position :relative;
+    margin: 1em;
+    display: inline-block;
+    padding: 0.5em 1em;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-family: comfortaa;
+    font-weight: bold
+}
+
+#kennsaku:before, #kennsaku:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-color: #454545;
+    box-sizing: border-box;
+    border-style: solid;
+    width: 1em;
+    height: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+#kennsaku:before {
+    top: -6px;
+    left: -6px;
+    border-width: 2px 0 0 2px;
+    z-index: 5;
+}
+
+#kennsaku:after {
+    bottom: -6px;
+    right: -6px;
+    border-width: 0 2px 2px 0;
+}
+
+#kennsaku:hover:before, #kennsaku:hover:after {
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    border-color: #fff;
+}
+
+#kennsaku:hover {
+    color: #353535;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+/* 投稿フォームへ遷移ボタン 154~205*/
+#toukoufomu { 
+    color: #454545;
+    background: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #454545;
+    position :relative;
+    margin: 1em;
+    display: inline-block;
+    padding: 0.5em 1em;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-family: comfortaa;
+    font-weight: bold
+}
+
+#toukoufomu:before, #toukoufomu:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-color: #454545;
+    box-sizing: border-box;
+    border-style: solid;
+    width: 1em;
+    height: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+#toukoufomu:before {
+    top: -6px;
+    left: -6px;
+    border-width: 2px 0 0 2px;
+    z-index: 5;
+}
+
+#toukoufomu:after {
+    bottom: -6px;
+    right: -6px;
+    border-width: 0 2px 2px 0;
+}
+
+#toukoufomu:hover:before, #toukoufomu:hover:after {
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    border-color: #fff;
+}
+
+#toukoufomu:hover {
+    color: #353535;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+/*セレクトボックスの装飾*/
+.selectdiv {
+    overflow: hidden;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.selectdiv select {
+    width: 100%;
+    cursor: pointer;
+    text-indent: 0.01px;
+    text-overflow: ellipsis;
+    border: none;
+    outline: none;
+    background: transparent;
+    background-image: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.selectdiv select::-ms-expand {
+    display: none;
+}
+
+.selectdiv.cp_s {
+    position: relative;
+    border: 2px solid #696969;
+    border-radius: 50px;
+    background: #ffffff;
+}
+
+.selectdiv.cp_s::before {
+    position: absolute;
+    top: 0.8em;
+    right: 0.8em;
+    width: 0;
+    height: 0;
+    padding: 0;
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #696969;
+    pointer-events: none;
+}
+
+.selectdiv.cp_s select {
+    padding: 8px 38px 8px 8px;
+    color: #696969;
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}

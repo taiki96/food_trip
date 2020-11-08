@@ -1,0 +1,80 @@
+#photos_index {
+    /*background-image: url("images2/pexels-aleksandar-pasaric-1415734.jpg");*/
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    /*background-size: cover;*/
+    /*background-attachment: fixed;*/
+}
+
+
+
+header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin: 30px auto;
+    width: 80%;
+    background-color: #CCCCCC;
+    border-radius: 20px;
+    box-shadow: 0 0 10px gray;
+}
+
+main p {
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+ul {
+    position: relative;
+    left: 200px;
+}
+
+li {
+    list-style: none;
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.list_photos {
+    position: relative;
+    left: 300px;
+    bottom: 125px;
+    font-size: 20px;
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+@media screen and (max-width:480px){
+    #title_photo img{
+        width: 300px;
+        height: 70px;
+    }
+    
+    main p {
+        font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    /*li img {*/
+    /*    width: 150px;*/
+    /*    height: 150px;*/
+    /*}*/
+    
+    ul {
+        position: relative;
+        left: 20px;
+    }
+    
+    .list_photos {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        padding-bottom: 20px;
+        font-size: 10px;
+        font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    }
+    
+}

@@ -1,0 +1,263 @@
+@charset 'utf-8';
+
+.slideshow:nth-child(1){
+    background-image: url("images2/maingazou.jpg");
+}
+
+.slideshow:nth-child(2){
+    background-image: url("images2/toukougazou.jpg");
+    animation-delay: 10s;
+}
+
+.slideshow:nth-child(3){
+    background-image: url("images2/kennsaku.jpg");
+    animation-delay: 20s;
+}
+
+h1 {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.main-copy1 {
+    position: relative;
+    top: 200px;
+    left: 50px;
+}
+
+.main-copy2 {
+    position: absolute;
+    top: 300px;
+    right: 20px;
+}
+
+.main-copy3 {
+    position: absolute;
+    top: 300px;
+    right: 0px;
+}
+
+
+/*main-copy1*/
+.main-copy1 span:nth-child(1){
+    animation-delay: 0.1s;
+}
+
+.main-copy1 span:nth-child(2){
+    animation-delay: 0.3s;
+}
+
+.main-copy1 span:nth-child(3){
+    animation-delay: 0.5s;
+}
+
+.main-copy1 span:nth-child(4){
+    animation-delay: 0.7s;
+}
+
+.main-copy1 span:nth-child(5){
+    animation-delay: 0.9s;
+}
+
+.main-copy1 span:nth-child(6){
+    animation-delay: 1.1s;
+}
+
+.main-copy1 span:nth-child(7){
+    animation-delay: 1.3s;
+}
+
+.main-copy1 span:nth-child(8){
+    animation-delay: 1.5s;
+}
+
+.main-copy1 span:nth-child(9){
+    animation-delay: 1.7s;
+}
+
+.main-copy1 span:nth-child(10){
+    animation-delay: 1.9s;
+}
+
+.main-copy1 span:nth-child(11){
+    animation-delay: 2.1s;
+}
+
+.main-copy1 span:nth-child(12){
+    animation-delay: 2.3s;
+}
+
+.main-copy1 span:nth-child(13){
+    animation-delay: 2.5s;
+}
+
+.main-copy1 p:nth-child(14){
+    animation-delay: 3.1s;
+}
+
+/*main-copy2縺ｮ繧ｹ繝ｩ繧､繝画枚蟄�*/
+.main-copy2 span:nth-child(1){
+    animation-delay: 0.1s;
+}
+
+.main-copy2 span:nth-child(2){
+    animation-delay: 0.3s;
+}
+
+.main-copy2 span:nth-child(3){
+    animation-delay: 0.5s;
+}
+
+.main-copy2 span:nth-child(4){
+    animation-delay: 0.7s;
+}
+
+.main-copy2 span:nth-child(5){
+    animation-delay: 0.9s;
+}
+
+.main-copy2 p:nth-child(6){
+    animation-delay: 1.3s;
+}
+
+/*main-copy3縺ｮ繧ｹ繝ｩ繧､繝画枚蟄�*/
+.main-copy3 span:nth-child(1){
+    animation-delay: 0.1s;
+}
+
+.main-copy3 span:nth-child(2){
+    animation-delay: 0.3s;
+}
+
+.main-copy3 span:nth-child(3){
+    animation-delay: 0.5s;
+}
+
+.main-copy3 span:nth-child(4){
+    animation-delay: 0.7s;
+}
+
+.main-copy3 span:nth-child(5){
+    animation-delay: 0.9s;
+}
+
+.main-copy3 p:nth-child(6){
+    animation-delay: 1.3s;
+}
+
+
+span {
+    color: transparent;
+    animation: blur 10s ease-out infinite;
+}
+
+.slideshow p {
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    color: transparent;
+    animation: blur 10s ease-out infinite;
+}
+
+@keyframes blur {
+  0%      {text-shadow:  0 0 100px #fff; opacity:0;}
+  5%      {text-shadow:  0 0 90px #fff;}
+  15%     {opacity: 1;}
+  20%     {text-shadow:  0 0 0px #fff;}
+  80%     {text-shadow:  0 0 0px #fff;}
+  85%     {opacity: 1;}
+  95%     {text-shadow:  0 0 90px #fff;}
+  100%    {text-shadow:  0 0 100px #fff; opacity:0;}
+}
+
+.slide-item {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+
+@keyframes slideshow{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  28%{
+    opacity: 1
+  }
+  38%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.slideshow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 550px;
+    opacity: 0;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: slideshow;
+    font-size: 30px;
+    margin: auto 0;
+    padding-top: 100px;
+    background: no-repeat 50%;
+    background-size: cover;
+}
+
+/*スマホ用デザイン*/
+@media screen and (max-width: 480px){
+    .slide-item {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+    
+    .slideshow{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 200px;
+        opacity: 0;
+        animation-duration: 30s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-name: slideshow;
+        font-size: 10px;
+        margin: auto 0;
+        padding-top: 20px;
+        background: no-repeat 50%;
+        background-size: cover;
+    }
+    
+    .main-copy1 {
+        position: relative;
+        top: 70px;
+        left: 10px;
+    }
+    
+    .main-copy2 {
+        position: relative;
+        top: 70px;
+        left: 220px;
+    }
+    
+    .main-copy3 {
+        position: relative;
+        top: 70px;
+        left: 220px;
+    }
+}

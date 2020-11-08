@@ -1,0 +1,50 @@
+#googleMap {
+    width: 80%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map_post {
+    width: 700px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#map_pin {
+    width: 700px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#detail_googlemap {
+    width: 700px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 480px){
+    #googleMap{
+        width: 75%;
+        height: 200px;
+    }
+
+    #map_post{
+        width: 75%;
+        height: 200px;
+    }
+
+    #map_pin{
+        width: 75%;
+        height: 200px;
+    }
+
+    #detail_googlemap{
+        width: 75%;
+        height: 200px;
+    }
+    
+}

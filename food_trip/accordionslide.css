@@ -1,0 +1,114 @@
+#cp_accoudionslide{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    visibility: hidden;
+    width: 100%;
+    height: 60vh;
+    border-radius: 20px;
+}
+
+#cp_accoudionslide #slideitem{
+    position: relative;
+    visibility: visible;
+    overflow: hidden;
+    width: calc(100% / 3);
+    height: 100%;
+    cursor: pointer;
+    -webkit-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#cp_accoudionslide #slideitem:nth-child(1){
+    background-image: url("images2/pexels-ash-376464.jpg");
+}
+
+#cp_accoudionslide #slideitem:nth-child(2){
+    background-image: url("images2/pexels-ponyo-sakana-3662103.jpg");
+}
+
+#cp_accoudionslide #slideitem:nth-child(3){
+    background-image: url("images2/pexels-ponyo-sakana-3662130.jpg");
+}
+
+#cp_accoudionslide #slideitem:after{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: 0;
+    background-color: rgba(255, 204, 128, 0.6);
+}
+
+#cp_accoudionslide:hover #slideitem:hover:after{
+    visibility: visible;
+    -webkit-transition: all 0.2s linear 0.4s;
+    transition: all 0.2s linear 0.4s;
+    opacity: 1;
+}
+
+#cp_accoudionslide:hover #slideitem:hover{
+    width: 70%;
+}
+
+#cp_accoudionslide #slideitem #slidecont {
+    margin: 0 auto;
+    padding-left: 30px;
+    width: 80%;
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    bottom: 60px;
+    left: 20px;
+    visibility: hidden;
+    max-width: 400px;
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: rgba(239, 108, 0, 0.6);
+}
+
+#cp_accoudionslide #slideitem #slidecont h1{
+    font-size: 20px;
+}
+
+#cp_accordionslide #slideitem #slidecont p {
+    font-size: 15px;
+}
+
+#cp_accoudionslide:hover #slideitem:hover #slidecont{
+    visibility: visible;
+    -webkit-transition: all 0.2s linear 0.7s;
+    transition: all 0.2s linear 0.7s;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+}
+
+@media only screen and (max-width:768px){
+    #cp_accoudionslide{
+        height: 80vh;
+    }
+    #cp_accoudionslide #slideitem #slidecont h1{
+        font-size: 0.9em;
+    }
+    #cp_accoudionslide #slideitem #slidecont p{
+        font-size: 0.7em;
+    }
+    #cp_accoudionslide #slideitem #slidecont{
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+    }
+    #cp_accoudionslide:hover #slideitem:hover #slidecont{
+        left: 10px;
+    }
+}
